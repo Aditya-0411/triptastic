@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripTastic Tours | Memorable Journeys Await</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,800;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+        <a href="#home" class="logo-link">
+            <img src="images/logo.jpeg" alt="TripTastic Tours Logo" class="logo-img">
+        </a>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#packages">Packages</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <!-- <button class="nav-btn"><span>Book Now</span> <i class="fa-solid fa-arrow-right"></i></button> -->
+        <button class="hamburger" id="hamburger"><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!-- MOBILE MENU -->
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#home" onclick="closeMobile()">Home</a>
+        <a href="#destinations" onclick="closeMobile()">Destinations</a>
+        <a href="#packages" onclick="closeMobile()">Packages</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-badge">✦ Southeast Asia Specialists</div>
+            <h1>Discover the <em>Magic</em> of<br>Southeast Asia</h1>
+            <p>Handcrafted luxury experiences across Bali, Thailand & Vietnam — tailored just for you.</p>
+            <div class="hero-buttons">
+                <a href="#packages" class="primary-btn">Explore Packages <i class="fa-solid fa-compass"></i></a>
+                <a href="#contact" class="secondary-btn">Get a Free Quote</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span>Scroll Down</span>
+            <div class="scroll-line"></div>
+        </div>
+    </section>
+
+    <!-- STATS -->
+    <section class="stats">
+        <div class="stats-inner">
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-face-smile"></i></div>
+                <h2 class="counter" data-target="500">0</h2><span class="stat-plus">+</span>
+                <p>Happy Clients</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-suitcase-rolling"></i></div>
+                <h2 class="counter" data-target="120">0</h2><span class="stat-plus">+</span>
+                <p>Luxury Tours</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-earth-asia"></i></div>
+                <h2 class="counter" data-target="3">0</h2><span class="stat-plus"></span>
+                <p>Countries</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-card">
+                <div class="stat-icon"><i class="fa-solid fa-star"></i></div>
+                <h2>4.9</h2><span class="stat-plus">★</span>
+                <p>Average Rating</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- DESTINATIONS -->
+    <section id="destinations" class="destinations">
+        <div class="section-header">
+            <span class="section-tag">Where to Next?</span>
+            <h2>Featured <em>Destinations</em></h2>
+            <p>Each destination chosen for its beauty, culture, and unforgettable experiences.</p>
+        </div>
+
+        <div class="card-grid">
+            <div class="travel-card" data-aos>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=800" alt="Bali">
+                    <div class="card-tag">Most Popular</div>
+                </div>
+                <div class="card-content">
+                    <h3>Bali, Indonesia</h3>
+                    <p>Luxury beaches • Private Villas • Golden Sunsets</p>
+                    <div class="card-footer">
+                        <h4>₹29,999 <span>onwards</span></h4>
+                        <a href="#packages" class="card-btn">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-card large" data-aos>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1508009603885-50cf7c579365?w=800" alt="Thailand">
+                    <div class="card-tag">Editor's Pick</div>
+                </div>
+                <div class="card-content">
+                    <h3>Thailand</h3>
+                    <p>Bangkok • Phuket • Pattaya</p>
+                    <div class="card-footer">
+                        <h4>₹24,999 <span>onwards</span></h4>
+                        <a href="#packages" class="card-btn">View</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="travel-card" data-aos>
+                <div class="card-img-wrap">
+                    <img src="https://images.unsplash.com/photo-1528127269322-539801943592?w=800" alt="Vietnam">
+                    <div class="card-tag">Hidden Gem</div>
+                </div>
+                <div class="card-content">
+                    <h3>Vietnam</h3>
+                    <p>Halong Bay • Hanoi • Pristine Beaches</p>
+                    <div class="card-footer">
+                        <h4>₹27,999 <span>onwards</span></h4>
+                        <a href="#packages" class="card-btn">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PACKAGES -->
+    <section id="packages" class="packages">
+        <div class="section-header light">
+            <span class="section-tag">Curated Escapes</span>
+            <h2>Premium <em>Packages</em></h2>
+            <p>All-inclusive experiences — flights, stays, transfers & more.</p>
+        </div>
+
+        <div class="package-container">
+            <div class="package-card">
+                <div class="pkg-icon"><i class="fa-solid fa-heart"></i></div>
+                <h3>Bali Honeymoon</h3>
+                <p>5 Nights • Private Villa • Candle Dinner</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Airport Transfers</li>
+                    <li><i class="fa-solid fa-check"></i> Daily Breakfast</li>
+                    <li><i class="fa-solid fa-check"></i> Couple Spa Session</li>
+                </ul>
+                <div class="pkg-price">₹39,999</div>
+                <a href="#contact" class="pkg-btn">Book Now</a>
+            </div>
+
+            <div class="package-card featured">
+                <div class="featured-badge">⭐ Best Value</div>
+                <div class="pkg-icon"><i class="fa-solid fa-crown"></i></div>
+                <h3>Thailand Luxury Escape</h3>
+                <p>Bangkok + Phuket • Flights + 5★ Resort</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Return Flights Included</li>
+                    <li><i class="fa-solid fa-check"></i> 5-Star Hotel Stays</li>
+                    <li><i class="fa-solid fa-check"></i> Island Hopping Tour</li>
+                </ul>
+                <div class="pkg-price">₹44,999</div>
+                <a href="#contact" class="pkg-btn">Book Now</a>
+            </div>
+
+            <div class="package-card">
+                <div class="pkg-icon"><i class="fa-solid fa-ship"></i></div>
+                <h3>Vietnam Explorer</h3>
+                <p>6 Days • Ha Long Bay Cruise + Sightseeing</p>
+                <ul>
+                    <li><i class="fa-solid fa-check"></i> Overnight Cruise</li>
+                    <li><i class="fa-solid fa-check"></i> City Tours Hanoi</li>
+                    <li><i class="fa-solid fa-check"></i> Street Food Walk</li>
+                </ul>
+                <div class="pkg-price">₹42,999</div>
+                <a href="#contact" class="pkg-btn">Book Now</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY US -->
+    <section class="why-us">
+        <div class="why-inner">
+            <div class="section-header">
+                <span class="section-tag">Our Promise</span>
+                <h2>Why Choose <em>TripTastic?</em></h2>
+            </div>
+            <div class="why-grid">
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-hotel"></i></div>
+                    <h3>Luxury Stays</h3>
+                    <p>Handpicked premium villas and 5-star resorts with exceptional service.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-earth-asia"></i></div>
+                    <h3>Expert Curated</h3>
+                    <p>Itineraries designed by travel experts who've explored every destination personally.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-headset"></i></div>
+                    <h3>24×7 Support</h3>
+                    <p>Dedicated support before, during and after your journey — always just a call away.</p>
+                </div>
+                <div class="why-card">
+                    <div class="why-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                    <h3>Safe Travel</h3>
+                    <p>All trips are fully insured with verified partners and secure payment gateways.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIAL -->
+    <!-- <section class="testimonials">
+        <div class="section-header light">
+            <span class="section-tag">Real Travellers</span>
+            <h2>What Our <em>Clients Say</em></h2>
+        </div>
+        <div class="testi-grid">
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p>"Our Bali honeymoon was absolutely perfect. TripTastic handled every detail — we just had to enjoy."</p>
+                <div class="testi-author"><div class="testi-avatar">R</div><span>Riya & Arjun, Mumbai</span></div>
+            </div>
+            <div class="testi-card featured-testi">
+                <div class="testi-stars">★★★★★</div>
+                <p>"The Thailand package was beyond our expectations. Flights, resort, island tours — everything seamless!"</p>
+                <div class="testi-author"><div class="testi-avatar">S</div><span>Sneha Kapoor, Delhi</span></div>
+            </div>
+            <div class="testi-card">
+                <div class="testi-stars">★★★★★</div>
+                <p>"Vietnam Explorer was a dream. The Ha Long Bay cruise was the highlight of our lives. Booking again soon!"</p>
+                <div class="testi-author"><div class="testi-avatar">K</div><span>Karan Shah, Pune</span></div>
+            </div>
+        </div>
+    </section> -->
+    <section class="testimonials">
+    <div class="section-header light">
+        <span class="section-tag">Real Travellers</span>
+        <h2>What Our <em>Clients Say</em></h2>
+    </div>
+
+    <div class="review-slider">
+        <div class="review-track">
+
+            <div class="review-card">
+                <div class="testi-stars">★★★★★</div>
+                <p>"Our Bali honeymoon was absolutely perfect. Everything was seamless and luxurious."</p>
+                <span>— Riya & Arjun, Mumbai</span>
+            </div>
+
+            <div class="review-card">
+                <div class="testi-stars">★★★★★</div>
+                <p>"Thailand package was superb. Phuket stay and island hopping were unforgettable."</p>
+                <span>— Sneha Kapoor, Delhi</span>
+            </div>
+
+            <div class="review-card">
+                <div class="testi-stars">★★★★★</div>
+                <p>"Vietnam trip was amazing. Ha Long Bay cruise was a lifetime memory."</p>
+                <span>— Karan Shah, Pune</span>
+            </div>
+
+            <div class="review-card">
+                <div class="testi-stars">★★★★★</div>
+                <p>"Best travel agency experience ever. Support team was always available."</p>
+                <span>— Priya Mehta, Noida</span>
+            </div>
+
+            <div class="review-card">
+                <div class="testi-stars">★★★★★</div>
+                <p>"Bali villas and sunset dinner were beautifully arranged."</p>
+                <span>— Ankit Verma, Lucknow</span>
+            </div>
+
+            <!-- duplicate for smooth infinite sliding -->
+            <div class="review-card">
+                <div class="testi-stars">★★★★★</div>
+                <p>"Our Bali honeymoon was absolutely perfect. Everything was seamless and luxurious."</p>
+                <span>— Riya & Arjun, Mumbai</span>
+            </div>
+
+            <div class="review-card">
+                <div class="testi-stars">★★★★★</div>
+                <p>"Thailand package was superb. Phuket stay and island hopping were unforgettable."</p>
+                <span>— Sneha Kapoor, Delhi</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact-section">
+        <div class="section-header">
+            <span class="section-tag">Get in Touch</span>
+            <h2>Plan Your <em>Dream Trip</em></h2>
+            <p>Reach out and our travel experts will craft your perfect journey.</p>
+        </div>
+        <div class="contact-grid">
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <h3>Email Us</h3>
+                <a href="mailto:triptastictours828@gmail.com">triptastictours828@gmail.com</a>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <h3>Visit Us</h3>
+                <p>Rishab Cloud-9, Office No. 563,<br>5th Floor, Vaishali,<br>Ghaziabad, UP - 201010</p>
+            </div>
+            <div class="contact-card">
+                <div class="contact-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                <h3>Call / WhatsApp</h3>
+                <a href="tel:8796045449">+91 87960 45449</a><br>
+                <a href="tel:8796033620">+91 87960 33620</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-inner">
+            <img src="images/logo.jpeg" alt="TripTastic Logo" class="footer-logo">
+            <p class="footer-tagline">Memorable Journeys Await</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#destinations">Destinations</a>
+                <a href="#packages">Packages</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p class="footer-copy">© 2026 TripTastic Tours | <a href="https://premierpathways.in" target="_blank">premierpathways.in</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
